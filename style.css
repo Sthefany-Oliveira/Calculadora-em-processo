@@ -22,7 +22,7 @@ body{
     background-color: rgb(74, 11, 110);
     padding: 25px;
     border-radius: 30px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
+    box-shadow: 0 30px 4cap rgba(0, 0, 0, .2);
     width: 320px;
     display: flex; /* ativa o flexbox na calculadora */
     flex-direction: column; /* muda direção para coluna */
@@ -109,7 +109,7 @@ button:active{
 
 .botao-zero{
     flex: 2;
-    
+
 }
 
 
