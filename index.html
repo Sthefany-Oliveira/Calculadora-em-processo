@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Calculadora</title>
 </head>
+
 <body>
+
     <div class="calculadora">
         <!-- tela onde aparece os números eé resutado -->
         <input type="text" id="tela">
@@ -14,48 +17,48 @@
         <div class="botoes">
             <!-- primeira linha de botoes -->
             <div class="linha-botoes">
-                <button class="botao-limpar">C</button>
-                <button class="operador">/</button>
-                <button class="operador">*</button>
-                <button class="apagar">Del</button>
+                <button class="botao-limpar" onclick="limparTela()">C</button>
+                <button class="operador" onclick="adicionarValor('/')">/</button>
+                <button class="operador" onclick="adicionarValor('*')">*</button>
+                <button class="apagar" onclick=" apagarUltimo()">Del</button>
             </div>
 
             <div class="linha-botoes">
                 <!-- segunda linha -->
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button class="operador">-</button>
+                <button onclick="adicionarValor('7')">7</button>
+                <button onclick="adicionarValor('8')">8</button>
+                <button onclick="adicionarValor('9')">9</button>
+                <button class="operador" onclick="adicionarValor('-')">-</button>
             </div>
 
             <div class="linha-botoes">
                 <!-- terceira linha -->
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button class="operador">+</button>
+                <button onclick="adicionarValor('4')">4</button>
+                <button onclick="adicionarValor('5')">5</button>
+                <button onclick="adicionarValor('6')">6</button>
+                <button class="operador" onclick="adicionarValor('+')">+</button>
             </div>
 
             <div class="linha-botoes">
                 <!-- quarta linha -->
-                 <button>1</button>
-                 <button>2</button>
-                 <button>3</button>
-                 <button class="botao-igual">=</button>
+                <button onclick="adicionarValor('1')">1</button>
+                <button onclick="adicionarValor('2')">2</button>
+                <button onclick="adicionarValor('3')">3</button>
+                <button class="botao-igual" onclick="calcularResultado()">=</button>
             </div>
 
             <div class="linha-botoes">
                 <!-- quinta linha -->
-                 <button class="botao-zero">0</button>
-                 <button>.</button>
+                <button onclick="adicionarValor('0')" class="botao-zero">0</button>
+                <button onclick="adicionarValor('.')">.</button>
             </div>
         </div>
     </div>
 
-
-
+    <script src="script.js"></script>
 
 
 
 </body>
+
 </html>
