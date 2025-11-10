@@ -37,18 +37,21 @@ function calcularResultado() {
 // é uma nova função de declaração junto com evento 
 document.addEventListener("keydown", function (evento) {
     const tecla = evento.key; //pega o valor da tecla pressionada EX: "1", "+",enter, "Backspace"
+   // incluiu todas os "botoes" que estao entre ("")
     if("1234567890+-*/.".includes(tecla)){
         adicionarValor(tecla)
     }
-
+    //Enter (ou =) para calcular
     if(tecla === "Enter" || tecla === "="){
         calcularResultado();
     }
 
+    //para apagar o ultimo numero
     if(tecla === "Backspace"){
         apagarUltimo();
     }
 
+    // pra limpar tudo
     if(tecla === "Escape"){
         limparTela(); 
     }
