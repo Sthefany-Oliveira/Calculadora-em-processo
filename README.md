@@ -1,1 +1,1 @@
-calculadora em processo usamos-HTML e CSS
+Calculadora pronta usamos-HTML , CSS e JAVASCRIPT
